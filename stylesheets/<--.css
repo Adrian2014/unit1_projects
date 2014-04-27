@@ -1,0 +1,57 @@
+/*
+Content + HTML:Structure + CSS: Presentation = Your Website
+CSS= Cascading Style Sheet - lets your style the elements on your page; works with but is not HTML 
+   - Can color text, position, and size
+Rules - body {color:#3333;}
+      - selector {property: value;
+                  property: value;
+                  property: value;}
+
+        p {property: value;} - selects all paragraph elements
+        img {property: value;} - selects all image elemets
+        #x {property: value;} - selects all elements with an id of "x"
+                        ID - should apply to one element on a page
+             <p id="x">word</p>
+        .x {property: value;} - selects all elements with a class of "x"
+                       CLASS - lots of elemenet can have the same class
+            <p class="x">word</p>
+        p x {color: yellow;}
+            selects all x elements within a paragraph
+            <p>This is <em>important</em></p>
+        p {color:white;
+           background-color:red;
+           font-family: Arial, sans-serif;}
+
+ CSS to HTML 
+            Inline <p style="color:red">Some text</p>
+            Embedded <head>
+                         <style type="text/css">
+                         p {
+                          color: blue;
+                          font-size: 12px;
+                                     }
+                         </style>
+                    </head>
+            External 
+                     <head>
+                     <link rel="stylesheet" type="text/css" href="style.css">
+                     </head>
+*/
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p{
+color:red;
+text-align:center;} 
+</style>
+</head>
+
+<body>
+<p>Hello World!</p>
+<p>This paragraph is styled with CSS.</p>
+</body>
+</html>
+
+

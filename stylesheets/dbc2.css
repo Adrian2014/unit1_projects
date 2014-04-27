@@ -1,0 +1,47 @@
+
+
+body {background-color: black;
+	  position: absolute; 
+	  padding-left: 330px;
+      color: white;
+      margin: 20px;
+      padding:30px; }
+
+footer{border-style: solid;
+width: 100px;}
+
+ul {background-color: gray;
+color: white;
+margin-left: 40px}
+
+      /* relative to the content */
+.sbar {position:relative;
+	float: right;
+	border-style: solid;
+	border-color: blue;
+	margin-left: 10px;
+	padding-left: 5px;
+	   background-color: white;
+	   color: black;	
+       width: 250px;
+       height: 100px;
+       list-style: none;
+       text-align: left;
+   }
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+   color: white;
+
+}
+
+
+
