@@ -1,13 +1,15 @@
 /* General Styles */
 body {
   background-color: rgb(241, 241, 241);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.2em;
-  margin: 0px auto;
-  min-width: 960px;
+  margin: 0em auto;
+  min-width: 60em;
   width: 100%;
 }
+
+
 
 p {
   margin: 1em;
@@ -18,18 +20,19 @@ a {
   text-decoration: none;
 }
 
+
 h1 {
   font-size: 2.2em;
   float: left;
-  line-height: 75px;
+  line-height: 4.6875em;
 }
 
 h2 {
   background-color: rgb(60, 60, 60);
   color: #FFF;
-  font-size: 2.4em;
+  font-size: 2em;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 5em;
   margin: 0 0 0.5em 0;
   text-align: center;
 }
@@ -45,52 +48,76 @@ h4 {
   color: rgb(120, 120, 120);
   font-size: 1em;
   text-align: center;
+  font-family: 'lato', arial, sans-serif;
 }
 
+/* Fonts */
+font-face {
+    font-family: 'EntypoRegular';
+    src: url('font/Entypo-webfont.eot');
+    src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Entypo-webfont.woff') format('woff'),
+         url('font/Entypo-webfont.ttf') format('truetype'),
+         url('font/Entypo-webfont.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
 /* Navigation */
-.nav li {
+
+
+
+.nav li { 
   float: left;
 }
+
+.nav li a:hover {color:black;} /* Need to have clearly defined class! */
+
 .nav li a {
   color: #fff;
-  margin: 0 10px;
-  padding: 5px 10px;
+  margin: 0 .625em;
+  padding: .3125em .625em;
   text-decoration: none;
 }
 
 .jump {
-  color: #565656;
-  font-size: 70px;
-  line-height: 80px;
+  color: orange;
+  font-size: 4.375em;
+  line-height: 3em;
   position: absolute;
   text-decoration: none;
   top: 0;
 }
 .jump.up {
-  left: 15px;
+  left: .8em;
 }
 .jump.down {
-  right: 15px;
+  right: .8em;
 }
 
 
 /* Header */
 #header {
   background-color: #009D92;
-  padding: 10px;
+  padding: .625em;
 }
+
+
 #header h1 {
   color: #FFEECC;
   background: url('../images/icons/it.png') no-repeat 0 50%;
-  padding-left: 40px;
+  padding-left: 2.5;
 }
 #header .nav {
   float: right;
   font-size: 1.2em;
-  margin-left: 20px;
+  margin-left: 1.25em;
 }
 #header .nav li {
-  line-height: 75px;
+  line-height: 4.6875em;
 }
 
 #header:after {
@@ -108,7 +135,7 @@ h4 {
 }
 #main div.wrapper{
     width: 100%;
-    max-width:1400px;
+    max-width:87.5em;
     margin: 0 auto;
 }
 
@@ -124,7 +151,7 @@ h4 {
 #famous div.woman {
   background-color: white;
   float: left;
-  min-height: 250px;
+  min-height: 15.625em;
   margin: 1%;
   padding: 2%;
   width: 27.33%;
@@ -147,19 +174,19 @@ h4 {
 }
 
 #organizations ul {
-  margin: 50px;
+  margin: 3.125em;
   position: relative;
 }
 #organizations ul li {
   font-size: 1.2em;
   line-height: 1.3em;
   margin-bottom: 1em;
-  padding-left: 5px;
+  padding-left: .3125em;
   max-width: 50%;
 }
 #organizations img {
   position: absolute;
-  right: 20px;
+  right: 1.25em;
   top: 0;
   display: none;
   max-width: 40%;
@@ -170,13 +197,13 @@ h4 {
 
 /* Fun Facts */
 #facts ul {
-  margin: 50px;
+  margin: 3.125em;
 }
 #facts ul li {
   font-size: 1.2em;
   line-height: 1.3em;
   margin-bottom: 1em;
-  padding-left: 5px;
+  padding-left: .3125em;
 }
 
 
@@ -189,7 +216,7 @@ h4 {
 #footer .nav {
   float: left;
   font-size: 1.1em;
-  margin: 10px;
+  margin: .625em;
 }
 
 #footer:after {
